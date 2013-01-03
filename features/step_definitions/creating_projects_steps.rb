@@ -18,6 +18,3 @@ Then /^I should see "(.*?)"$/ do |content|
   page.should have_content(content)
 end
 
-Then /^I should be on the project page for "(.*?)"$/ do |title|
-  page.should have_xpath("//title", :text => title)
-end
