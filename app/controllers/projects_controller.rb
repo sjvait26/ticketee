@@ -1,6 +1,9 @@
 class ProjectsController < ApplicationController
   def index
     @project = Project.all
+    if @project.blank?
+      flash.now[:error] = "There are no projects available"
+    end
   end
 
   def new
