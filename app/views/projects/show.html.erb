@@ -9,3 +9,4 @@
 <h2><%= @project.name %></h2>
 
 <%= link_to 'Edit Project', edit_project_path(@project) %>
+<%= link_to 'Delete Project', project_path(@project), :method => :delete, :confirm => "Are you sure want to destroy project '#{@project.name} 'permanently" %>
