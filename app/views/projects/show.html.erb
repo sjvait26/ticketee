@@ -1,4 +1,11 @@
 <% @title = "TextMate 2 - Projects - Ticketee" %>
 
+<% unless @project.valid? %>
+  <% @project.errors.full_messages.each do |err| %>
+    <%= err %>
+  <% end %>
+<% end %>
+
 <h2><%= @project.name %></h2>
 
+<%= link_to 'Edit Project', edit_project_path(@project) %>
