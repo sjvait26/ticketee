@@ -1,7 +1,7 @@
 
 
 Given /^there is a project called "(.*?)"$/ do |name|
-  FactoryGirl.create(:project, :name => name)
+  @project = FactoryGirl.create(:project, :name => name)
 end
 
 Then /^I should be on the project page for "(.*?)"$/ do |title|
