@@ -1,0 +1,12 @@
+<%= form_for [@project, @ticket] do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %> </br>
+    <%= f.text_field :title, :placeholder => "Title" %> </br>
+  </p>
+  <p>
+    <%= f.label :description %> </br>
+    <%= f.text_area :description, :placeholder => "description must be greater than 10 characters" %> </br>
+  </p>
+  <%= f.submit %>
+<% end%>

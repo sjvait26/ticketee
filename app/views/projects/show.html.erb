@@ -10,3 +10,5 @@
 
 <%= link_to 'Edit Project', edit_project_path(@project) %>
 <%= link_to 'Delete Project', project_path(@project), :method => :delete, :confirm => "Are you sure want to destroy project '#{@project.name} 'permanently" %>
+
+<%= link_to 'New Ticket', new_project_ticket_path(@project) %>

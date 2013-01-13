@@ -2,9 +2,6 @@ class ProjectsController < ApplicationController
   
   before_filter :find_project, :only => [:show, :edit, :destroy, :update]
   
-  
-  
-  
   def index
     @project = Project.all
     if @project.blank?
@@ -57,8 +54,3 @@ private
     redirect_to projects_path
   end
 end
-
-
-
-
-
