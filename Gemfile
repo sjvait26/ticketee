@@ -29,6 +29,7 @@ group :test, :development do
 end
 
 group :test do
+  gem 'email_spec'
   gem 'cucumber-rails'
   gem 'capybara'
   gem 'database_cleaner'
